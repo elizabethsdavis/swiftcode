@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Waiting View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WaitingViewController" customModule="controller" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwI-ez-gFf">
+                                <rect key="frame" x="84" y="107" width="433" height="386"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lwI-ez-gFf" secondAttribute="height" multiplier="433:386" id="D7d-69-5U4"/>
+                                    <constraint firstAttribute="width" secondItem="lwI-ez-gFf" secondAttribute="height" multiplier="433:386" id="GIf-8e-kqd"/>
+                                </constraints>
+                                <state key="normal" image="dumbbell">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="s5l-wF-16J" kind="show" id="C0V-r5-sTg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn the game on and then press start" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COk-gm-328">
+                                <rect key="frame" x="154" y="28" width="292" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lwI-ez-gFf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="68" id="5dx-X4-OWj"/>
+                            <constraint firstItem="COk-gm-328" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="MMj-MW-l31"/>
+                            <constraint firstAttribute="centerX" secondItem="COk-gm-328" secondAttribute="centerX" id="Oe8-VK-kt4"/>
+                            <constraint firstItem="lwI-ez-gFf" firstAttribute="centerX" secondItem="COk-gm-328" secondAttribute="centerX" id="cmx-Tr-4pN"/>
+                            <constraint firstItem="lwI-ez-gFf" firstAttribute="top" secondItem="COk-gm-328" secondAttribute="bottom" constant="58" id="nvO-X0-exz"/>
+                            <constraint firstAttribute="centerX" secondItem="lwI-ez-gFf" secondAttribute="centerX" constant="-0.5" id="ovW-6c-33f"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lwI-ez-gFf" secondAttribute="bottom" constant="107" id="vMR-E7-ABO"/>
+                            <constraint firstItem="lwI-ez-gFf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yKG-9X-pme"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="cmx-Tr-4pN"/>
+                                <exclude reference="vMR-E7-ABO"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Controller View Controller-->
+        <scene sceneID="5dw-kV-TJb">
+            <objects>
+                <viewController id="s5l-wF-16J" customClass="ControllerViewController" customModule="controller" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zta-SP-Jpb"/>
+                        <viewControllerLayoutGuide type="bottom" id="dGH-bV-BcG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VqA-t7-ygR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cDa-Cu-i0T"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OJL-v2-mfz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="979" y="267"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dumbbell" width="691" height="616"/>
+    </resources>
+</document>
